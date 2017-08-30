@@ -1,10 +1,10 @@
 defmodule Hangman.Game do
 
   defstruct(
-  turns_left: 7,
-  game_state: :initializing,
-  letters:    [],
-  used:       MapSet.new(),
+    turns_left: 7,
+    game_state: :initializing,
+    letters:    [],
+    used:       MapSet.new(),
   )
 
   def new_game(word) do
